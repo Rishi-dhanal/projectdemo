@@ -1,0 +1,54 @@
+
+<head>
+    <title>Welcome Page</title>
+    <style>
+        /* Styles for the profile boxes */
+        .profile-box {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .profile-box img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .profile-box a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome! Please select a user type:</h1>
+
+    <!-- Profile box for Adult User -->
+    <div class="profile-box">
+        <img src="path_to_adult_image" alt="Adult User Image">
+        <a href="{% url 'adult_user_page' %}">Adult User</a>
+    </div>
+
+    <!-- Profile box for Child User -->
+    <div class="profile-box">
+        <img src="path_to_child_image" alt="Child User Image">
+        <a href="{% url 'child_user_page' %}">Child User</a>
+    </div>
+
+    <!-- Additional profile box -->
+    <div class="profile-box" id="addProfileButton">
+        <img src="path_to_additional_image" alt="Add Profile Image">
+        <a href="#">Add New Profile</a>
+    </div>
+
+</body>
+</html>

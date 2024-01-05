@@ -1,0 +1,9 @@
+<body>
+    <h2>Membership Plans</h2>
+    <ul>
+        {% for plan in membership_plans %}
+            <li>{{ plan.name }} - {{ plan.amount }}</li>
+            <!-- Display other plan details as needed -->
+        {% endfor %}
+    </ul>
+</body>
